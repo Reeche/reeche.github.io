@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -186,7 +186,7 @@ ul#nav li.current a { color: #F06000; }
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
-#about {
+#about{
    background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
@@ -207,8 +207,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 420px;
+   height: 300px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -228,6 +228,60 @@ ul#nav li.current a { color: #F06000; }
 #about .download .button i {
    margin-right: 15px;
    font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Publication Section
+/* ------------------------------------------------------------------ */
+
+#publications{
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+
+#publications a, #publications a:visited  { color: #fff; }
+#publications a:hover, #publications a:focus { color: #11ABB0; }
+
+#publications h1 {
+    font: 30px/38px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+#publications h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+#publications p {
+    line-height: 30px;
+    color: #7A7A7A;
+}
+#publications .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+#publications .contact-details { width: 41.66667%; }
+#publications .download {
+    width: 58.33333%;
+    padding-top: 6px;
+}
+#publications .main-col { padding-right: 5%; }
+#publications .download .button {
+    margin-top: 6px;
+    background: #444;
+}
+#publications .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+}
+#publications .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
 }
 
 
@@ -425,11 +479,20 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* Portfolio Content */
+.portfolio-item .item-wrap{
+    width:200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
