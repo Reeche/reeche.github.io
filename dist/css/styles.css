@@ -3754,7 +3754,22 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    background-image: url("../assets/img/profile_new.JPG"); /* Background image */
+    background-size: cover; /* Cover the entire navbar */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the cropped picture */
 }
+
+/* Media query for smaller screens */
+@media (max-width: 991.98px) {
+    .navbar {
+        background-image: none; /* Remove background image */
+    }
+    .nav-link {
+        color: white;
+    }
+}
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -4140,7 +4155,7 @@ textarea.form-control-lg {
 }
 
 .navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-color: rgb(189, 93, 56);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
